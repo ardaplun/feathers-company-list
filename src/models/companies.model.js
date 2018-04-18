@@ -30,7 +30,13 @@ module.exports = function (app) {
       name:String,
       lat:Number,
       lng:Number,
-      startDate:{type:Date}
+      startDate:{type:Date},
+      rooms:[{
+          name:String,
+          size:Number,
+          floor:Number,
+          capacity:Number
+      }],
     }],
   });
 
